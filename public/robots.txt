@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://helix.vc/sitemap.xml
+Sitemap: https://dripp.vc/sitemap.xml
