@@ -1,4 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
 
-module.exports = nextConfig
+module.exports = () => {
+  return {
+    experimental: {
+      appDir: true,
+      typedRoutes: true,
+    },
+    poweredByHeader: false,
+    reactStrictMode: true,
+  };
+};
