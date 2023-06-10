@@ -1,6 +1,8 @@
+import 'focus-visible';
+
 import Script from 'next/script';
 import '../styles/globals.css';
-import { Inter } from 'next/font/google';
+import { Inter, DM_Sans } from 'next/font/google';
 import { GA_MEASUREMENT_ID } from '@/utils/gtag';
 import { CLARITY_PROJECT_ID } from '@/utils/clarity';
 
@@ -8,29 +10,34 @@ const inter = Inter({
   display: 'swap',
   subsets: ['latin'],
   variable: '--font-inter',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+});
+
+const dm = DM_Sans({
+  display: 'swap',
+  subsets: ['latin'],
+  variable: '--font-dm',
+  weight: ['400', '500', '700'],
 });
 
 export const metadata = {
-  description: 'Dripp Ventures',
-  metadataBase: new URL('https://dripp.vc'),
+  description: ' Building the DNA of the Future',
+  metadataBase: new URL('https://helix.vc'),
   openGraph: {
     description: 'Coming soon...',
     images: ['images/social/social-share.png'],
-    title: 'Dripp Ventures',
+    title: 'Helix Ventures',
     type: 'website',
-    url: 'https://dripp.vc',
+    url: 'https://helix.vc',
   },
-  title: 'Dripp',
+  title: 'Helix',
 };
 
 const isProduction = process.env.NODE_ENV === 'production' ?? true;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html
-      lang="en"
-      className={`${inter.variable} scroll-smooth bg-gray-900 font-sans antialiased [font-feature-settings:'ss01']`}
-    >
+    <html lang="en" className={`${inter.variable} ${dm.variable} scroll-smooth bg-white antialiased`}>
       <body>{children}</body>
       {isProduction && (
         <>

@@ -6,8 +6,8 @@ module.exports = {
     'postcss-focus-visible': {
       replaceWith: '[data-focus-visible-added]',
     },
-    'postcss-import': {},
     tailwindcss: {},
+    // 'postcss-import': {},
     ...(process.env.NODE_ENV === 'production' ? { cssnano: {} } : {}),
   },
 };

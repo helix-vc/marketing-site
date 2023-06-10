@@ -4,6 +4,7 @@ module.exports = () => {
   return {
     experimental: {
       appDir: true,
+      scrollRestoration: true,
       typedRoutes: true,
     },
     poweredByHeader: false,

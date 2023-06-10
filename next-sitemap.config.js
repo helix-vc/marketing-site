@@ -11,5 +11,5 @@ module.exports = {
       return withoutHost;
     },
   },
-  siteUrl: process.env.SITE_URL || 'https://dripp.vc',
+  siteUrl: process.env.SITE_URL || 'https://helix.vc',
 };
