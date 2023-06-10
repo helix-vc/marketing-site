@@ -142,7 +142,7 @@ export function StartUps() {
                       </time>
                     </div>
                   </div>
-                ))
+                )) as any
               }
             </Tab.List>
           </div>

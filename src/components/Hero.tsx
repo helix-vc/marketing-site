@@ -31,8 +31,8 @@ export function Hero() {
             <p>
               At Helix Ventures, we believe in the power of ideas and the people behind them. Our mission is to
               facilitate the emergence of startups that push the boundaries of technology and reshape the world for the
-              better. So, if you are ready to transform your dream into a reality, join us today and let's co-create the
-              future.
+              better. So, if you are ready to transform your dream into a reality, join us today and let&apos;s
+              co-create the future.
             </p>
             <p>
               Helix Ventures is not just an incubator; it is a birthplace of game-changing technologies and disruptive

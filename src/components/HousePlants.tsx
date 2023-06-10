@@ -184,7 +184,7 @@ export function HousePlants() {
                       </time>
                     </div>
                   </div>
-                ))
+                )) as any
               }
             </Tab.List>
           </div>

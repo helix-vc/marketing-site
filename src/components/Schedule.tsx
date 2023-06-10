@@ -164,7 +164,7 @@ function ScheduleTabbed() {
   useEffect(() => {
     const smMediaQuery = window.matchMedia('(min-width: 640px)');
 
-    function onMediaQueryChange({ matches }) {
+    function onMediaQueryChange({ matches }: any) {
       setTabOrientation(matches ? 'vertical' : 'horizontal');
     }
 
@@ -204,7 +204,7 @@ function ScheduleTabbed() {
                 }}
               />
             </div>
-          ))
+          )) as any
         }
       </Tab.List>
       <Tab.Panels>
@@ -218,7 +218,7 @@ function ScheduleTabbed() {
   );
 }
 
-function DaySummary({ day }) {
+function DaySummary({ day }: any) {
   return (
     <>
       <h3 className="text-2xl font-semibold tracking-tight text-blue-900">
@@ -229,7 +229,7 @@ function DaySummary({ day }) {
   );
 }
 
-function TimeSlots({ day, className }) {
+function TimeSlots({ day, className }: any) {
   return (
     <ol
       role="list"
@@ -238,7 +238,7 @@ function TimeSlots({ day, className }) {
         'space-y-8 bg-white/60 px-10 py-14 text-center shadow-xl shadow-blue-900/5 backdrop-blur',
       )}
     >
-      {day.timeSlots.map((timeSlot, timeSlotIndex) => (
+      {day.timeSlots.map((timeSlot: any, timeSlotIndex: any) => (
         <li
           key={timeSlot.start}
           aria-label={`${timeSlot.name} talking about ${timeSlot.description} at ${timeSlot.start} - ${timeSlot.end} PST`}
