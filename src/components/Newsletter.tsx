@@ -118,7 +118,7 @@ export function Newsletter() {
                   className="flex w-full max-w-sm flex-col items-center justify-center gap-4 md:w-1/2 md:flex-row"
                 >
                   <div className="flex-none px-3.5 py-2.5 text-center text-2xl font-semibold text-blue-900">
-                    Thank you for your interest! 🎉
+                    Your house plant will be delivered soon! 🌱
                   </div>
                 </motion.div>
               )}
