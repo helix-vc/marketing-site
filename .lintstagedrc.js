@@ -8,5 +8,4 @@ module.exports = {
       .join(' --file ')}`,
     "yarn test:ci --findRelatedTests --coverage=false"
   ],
-  '**/*.css': 'stylelint --fix',
 }
